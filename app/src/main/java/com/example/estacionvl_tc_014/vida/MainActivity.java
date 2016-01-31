@@ -31,6 +31,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         num2 = (EditText) findViewById(R.id.num2);
 
         sumar.setOnClickListener(this);
+        restar.setOnClickListener(this);
+        div.setOnClickListener(this);
+        mul.setOnClickListener(this);
 
         Log.i("ciclovida","Entro en onCreate");
     }
@@ -77,6 +80,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+
+        String n1 = num1.getText().toString();
+        String n2 = num2.getText().toString();
+
+        switch(v.getId()){
+
+            case R.id.sumar:
+
+                break;
+            case R.id.restar:
+
+                break;
+            case R.id.mul:
+
+                break;
+            case R.id.div:
+
+                break;
+
+        }
 
     }
 }
